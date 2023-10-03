@@ -28,6 +28,18 @@ spec:
             limits:
               cpu: 300m
               memory: 1500Mi
+        - name: backend
+          image: ghcr.io/vgaupset/dat515-project/backend:latest
+          ports:
+            - name: http
+              containerPort: 5277
+          resources:
+            requests:
+              cpu: 200m
+              memory: 1100Mi
+            limits:
+              cpu: 300m
+              memory: 1500Mi
           # securityContext:
           #   readOnlyRootFilesystem: true
           #   runAsNonRoot: true

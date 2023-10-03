@@ -6,8 +6,8 @@ metadata:
 spec:
   ports:
     - name: http
-      port: 5277
-      targetPort: 80
+      port: 80
+      targetPort: 5277
   selector:
     app: backend
   type: ClusterIP

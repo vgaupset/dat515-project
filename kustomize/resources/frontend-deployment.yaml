@@ -21,13 +21,13 @@ spec:
           ports:
             - name: http
               containerPort: 3000
-          resources:
-            requests:
-              cpu: 200m
-              memory: 100Mi
-            limits:
-              cpu: 300m
-              memory: 200Mi
+          # resources:
+          #   requests:
+          #     cpu: 200m
+          #     memory: 100Mi
+          #   limits:
+          #     cpu: 300m
+          #     memory: 200Mi
           # securityContext:
           #   readOnlyRootFilesystem: true
           #   runAsNonRoot: true

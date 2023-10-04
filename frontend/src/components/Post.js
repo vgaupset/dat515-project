@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import Twitterlikepost from './Twitterlikepost';
 
-const apiUrl = 'http://localhost:5277/api'; // Replace with your .NET API URL
+const apiUrl = 'http://54.152.181.77:30081/api'; // Replace with your .NET API URL
 
 
 

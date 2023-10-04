@@ -20,7 +20,7 @@ spec:
           image: ghcr.io/vgaupset/dat515-project/backend:latest
           ports:
             - name: http
-              containerPort: 5277
+              containerPort: 80
           resources:
             requests:
               cpu: 200m

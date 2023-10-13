@@ -9,3 +9,4 @@ resources:
   - resources/backend-service.yaml
   - resources/frontend-deployment.yaml
   - resources/frontend-service.yaml
+  - resources/backend-persistent-volume.yaml

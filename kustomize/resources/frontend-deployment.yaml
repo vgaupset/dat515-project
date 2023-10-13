@@ -24,44 +24,11 @@ spec:
           resources:
             requests:
               cpu: 200m
-              memory: 1100Mi
+              memory: 800Mi
             limits:
               cpu: 300m
-              memory: 1500Mi
-        - image: mysql:8.0
-          name: mysql
-          env:
-          - name: MYSQL_ROOT_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: MYSQL_ROOT_PASSWORD
-                key: password
-          - name: MYSQL_DATABASE
-            value: posts
-          - name: MYSQL_USER
-            value: backend
-          - name: MYSQL_PASSWORD
-            valueFrom:
-              secretKeyRef:
-                name: MYSQL_ROOT_PASSWORD
-                key: password
-          resources:
-            requests:
-              cpu: 200m
-              memory: 200Mi
-            limits:
-              cpu: 300m
-              memory: 300Mi
-          ports:
-          - containerPort: 3306
-            name: mysql
-          volumeMounts:
-          - name: mysql-persistent-storage
-            mountPath: /var/lib/mysql
-      volumes:
-      - name: mysql-persistent-storage
-        persistentVolumeClaim:
-          claimName: mysql-pv-claim
+              memory: 1200Mi
+
           # securityContext:
           #   readOnlyRootFilesystem: true
           #   runAsNonRoot: true

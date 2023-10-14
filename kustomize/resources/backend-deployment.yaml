@@ -34,7 +34,7 @@ spec:
           - name: MYSQL_ROOT_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: MYSQL-ROOT-PASSWORD
+                name: mysql-root-pw
                 key: password
           - name: MYSQL_DATABASE
             value: posts
@@ -43,7 +43,7 @@ spec:
           - name: MYSQL_PASSWORD
             valueFrom:
               secretKeyRef:
-                name: MYSQL-ROOT-PASSWORD
+                name: mysql-root-pw
                 key: password
           resources:
             requests:

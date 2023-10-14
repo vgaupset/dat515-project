@@ -77,11 +77,12 @@ sudo kubeadm config images pull --cri-socket /run/containerd/containerd.sock
 
 wget https://raw.githubusercontent.com/flannel-io/flannel/master/Documentation/kube-flannel.yml
 
-wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/kustomization.yaml
-wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/frontend-service.yaml 
-wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/frontend-deployment.yaml 
-wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/backend-service.yaml 
-wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/backend-deployment.yaml 
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/kustomization.yaml
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/frontend-service.yaml 
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/frontend-deployment.yaml 
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/backend-service.yaml 
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/backend-deployment.yaml 
+sudo wget https://raw.githubusercontent.com/vgaupset/dat515-project/main/kustomize/resources/backend-persistent-volume.yaml 
 
 mkdir /home/ubuntu/resources
 
@@ -92,6 +93,7 @@ mv frontend-service.yaml /home/ubuntu/resources
 mv frontend-deployment.yaml /home/ubuntu/resources
 mv backend-service.yaml /home/ubuntu/resources
 mv backend-deployment.yaml /home/ubuntu/resources
+mv backend-persistent-volume.yaml /home/ubuntu/resources
 
 
 
